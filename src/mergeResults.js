@@ -28,8 +28,8 @@ function getDataFromFiles (dir, filePattern) {
 }
 
 function mergeData (rawData) {
-    let mergedResults
-
+    let mergedResults;
+    console.log(rawData);
     rawData.forEach(data => {
         if (mergedResults === undefined) {
             // use the first result so that we have the right shape
